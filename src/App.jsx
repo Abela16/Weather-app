@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import SearchBox from "./components/SearchBox";
 function App() {
   const [weather, setweather] = useState(null);
 
@@ -16,7 +16,7 @@ function App() {
     <div className='app'>
       <h1 className='title'>Weather App</h1>
       <SearchBox onSearch={getweather}/>
-      {weather && <weatherCard data={weather} />}
+      {weather && <WeatherCard data={weather} />}
 
     </div>
     </>
