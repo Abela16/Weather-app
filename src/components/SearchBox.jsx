@@ -24,3 +24,5 @@ function SearchBox({onSearch}) {
         </form>
     )
 }
+
+export default SearchBox
